@@ -53,7 +53,7 @@ function App() {
         }
       });
 
-      console.log(filterProducts);
+      // console.log(filterProducts);
       setProducts(filterProducts);
     } catch (error) {
       alert("取得產品失敗");
@@ -106,7 +106,7 @@ function App() {
   const [modalmode, setModalMode] = useState(null);
 
   useEffect(()=>{
-    console.log(productModalRef.current);
+    // console.log(productModalRef.current);
     new Modal(productModalRef.current,{
       backdrop: false,
     });
